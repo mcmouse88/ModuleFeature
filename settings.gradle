@@ -14,3 +14,18 @@ dependencyResolutionManagement {
 }
 rootProject.name = "MultiModuleFeature"
 include ':app'
+include ':core'
+include ':features'
+include ':data'
+include ':wiring'
+include ':navigation'
+include ':core:common'
+include ':core:common-impl'
+include ':core:presentation'
+include ':core:theme'
+include ':features:cart'
+include ':features:catalog'
+include ':features:orders'
+include ':features:profile'
+include ':features:sign-in'
+include ':features:sign-up'
