@@ -1,15 +1,17 @@
 plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'com.google.dagger.hilt.android'
 }
 
 android {
-    namespace 'com.mcmouse88.sign_in'
-    compileSdk 33
+    namespace 'com.mcmouse88.multimodulefeature.sign_in'
+    compileSdk targetAndroidSdk
 
     defaultConfig {
-        minSdk 24
-        targetSdk 33
+        minSdk minAndroidSdk
+        targetSdk targetAndroidSdk
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -28,14 +30,22 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    buildFeatures {
+        viewBinding true
+    }
 }
 
 dependencies {
+    implementation Libs.Android.CoreKtx
+    implementation Libs.Android.AppCompat
+    implementation Libs.Android.FragmentKtx
+    implementation Libs.Android.LifecycleViewModelKtx
 
-    implementation 'androidx.core:core-ktx:1.7.0'
-    implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.8.0'
-    testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation Libs.Google.Material
+
+    implementation Libs.Google.Hilt
+    kapt Libs.Google.HiltCompiler
+
+    implementation project(Modules.Core.Presentation)
 }
