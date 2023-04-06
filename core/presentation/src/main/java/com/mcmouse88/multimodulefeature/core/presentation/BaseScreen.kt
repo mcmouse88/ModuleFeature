@@ -1,4 +1,5 @@
 package com.mcmouse88.multimodulefeature.core.presentation
 
-interface BaseScreen {
-}
+import java.io.Serializable
+
+interface BaseScreen : Serializable
