@@ -1,4 +1,9 @@
 package com.mcmouse88.multimodulefeature.data.orders.entities
 
-class OrderStatusDataValue {
+enum class OrderStatusDataValue {
+    CREATED,
+    ACCEPTED,
+    DELIVERING,
+    DONE,
+    CANCELLED
 }

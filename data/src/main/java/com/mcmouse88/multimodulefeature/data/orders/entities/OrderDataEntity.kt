@@ -1,4 +1,9 @@
 package com.mcmouse88.multimodulefeature.data.orders.entities
 
-class OrderDataEntity {
-}
+data class OrderDataEntity(
+    val uuid: String,
+    val recipient: RecipientDataEntity,
+    val items: List<OrderItemDataEntity>,
+    val status: OrderStatusDataValue,
+    val createdAtMillis: Long
+)

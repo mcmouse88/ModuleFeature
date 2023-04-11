@@ -1,4 +1,6 @@
 package com.mcmouse88.multimodulefeature.data.products.entities
 
-class DiscountDataEntity {
-}
+data class DiscountDataEntity(
+    val productId: Long,
+    val discountPercentage: Int
+)

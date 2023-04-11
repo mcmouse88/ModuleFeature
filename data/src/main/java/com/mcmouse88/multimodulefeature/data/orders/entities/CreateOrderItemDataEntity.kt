@@ -1,8 +1,7 @@
 package com.mcmouse88.multimodulefeature.data.orders.entities
 
-data class OrderItemDataEntity(
-    val id: String,
-    val productName: String,
+data class CreateOrderItemDataEntity(
+    val productId: Long,
     val quantity: Int,
     val priceUsdCents: Int
 )
