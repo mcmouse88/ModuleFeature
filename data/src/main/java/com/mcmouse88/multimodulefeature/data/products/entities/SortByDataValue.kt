@@ -1,4 +1,6 @@
 package com.mcmouse88.multimodulefeature.data.products.entities
 
-class SortByDataValue {
+enum class SortByDataValue {
+    PRICE,
+    NAME
 }

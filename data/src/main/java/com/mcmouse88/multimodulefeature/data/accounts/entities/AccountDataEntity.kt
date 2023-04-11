@@ -1,3 +1,8 @@
 package com.mcmouse88.multimodulefeature.data.accounts.entities
 
-class AccountDataEntity
+data class AccountDataEntity(
+    val id: Long,
+    val email: String,
+    val username: String,
+    val createdAtMillis: Long
+)
