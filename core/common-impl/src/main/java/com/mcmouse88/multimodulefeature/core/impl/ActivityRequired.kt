@@ -4,7 +4,7 @@ import androidx.fragment.app.FragmentActivity
 
 interface ActivityRequired {
 
-    fun onCreate(activity: FragmentActivity)
+    fun onCreated(activity: FragmentActivity)
 
     fun onStarted()
 

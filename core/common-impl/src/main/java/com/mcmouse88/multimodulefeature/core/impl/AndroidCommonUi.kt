@@ -35,7 +35,7 @@ class AndroidCommonUi(
         }
     }
 
-    override fun onCreate(activity: FragmentActivity) {
+    override fun onCreated(activity: FragmentActivity) {
         this.currentActivity = activity
     }
 
