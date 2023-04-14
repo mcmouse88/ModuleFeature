@@ -1,4 +1,5 @@
 package com.mcmouse88.multimodulefeature.cart.domain.exceptions
 
-class QuantityOutOfRangeException {
-}
+import com.mcmouse88.multimodulefeature.core.common.AppException
+
+class QuantityOutOfRangeException : AppException()
