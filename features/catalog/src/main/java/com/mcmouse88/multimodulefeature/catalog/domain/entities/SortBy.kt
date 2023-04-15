@@ -1,4 +1,6 @@
 package com.mcmouse88.multimodulefeature.catalog.domain.entities
 
-class SortBy {
+enum class SortBy {
+    PRICE,
+    NAME
 }

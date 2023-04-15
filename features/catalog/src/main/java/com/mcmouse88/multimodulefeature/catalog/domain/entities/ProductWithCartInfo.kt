@@ -1,4 +1,6 @@
 package com.mcmouse88.multimodulefeature.catalog.domain.entities
 
-class ProductWithCartInfo {
-}
+data class ProductWithCartInfo(
+    val product: Product,
+    val isInCart: Boolean
+)
