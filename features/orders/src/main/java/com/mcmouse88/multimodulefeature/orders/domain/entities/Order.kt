@@ -1,4 +1,9 @@
 package com.mcmouse88.multimodulefeature.orders.domain.entities
 
-class Order {
-}
+data class Order(
+    val uuid: String,
+    val status: OrderStatus,
+    val orderDeliverInfo: String,
+    val createdAt: String,
+    val orderItems: List<OrderItem>
+)

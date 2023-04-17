@@ -1,4 +1,7 @@
 package com.mcmouse88.multimodulefeature.orders.domain.entities
 
-class Field {
+enum class Field {
+    FIRST_NAME,
+    LAST_NAME,
+    ADDRESS
 }
