@@ -1,4 +1,9 @@
 package com.mcmouse88.multimodulefeature.orders.domain.entities
 
-class OrderStatus {
+enum class OrderStatus {
+    CREATED,
+    ACCEPTED,
+    DELIVERING,
+    DONE,
+    CANCELLED
 }
