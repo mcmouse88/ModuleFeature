@@ -1,4 +1,5 @@
 package com.mcmouse88.multimodulefeature.sign_in.domain.exceptions
 
-class EmptyEmailException {
-}
+import com.mcmouse88.multimodulefeature.core.common.AppException
+
+class EmptyEmailException : AppException()
