@@ -1,4 +1,8 @@
 package com.mcmouse88.multimodulefeature.sign_up.domain.entities
 
-class SignUpField {
+enum class SignUpField {
+    EMAIL,
+    USERNAME,
+    PASSWORD,
+    REPEAT_PASSWORD
 }
