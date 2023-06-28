@@ -34,7 +34,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
-        app:layout_constraintBottom_toTopOf="tv_original_price"
+        app:layout_constraintBottom_toTopOf="@id/tv_original_price"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/iv_product"
         app:layout_constraintTop_toTopOf="parent"
@@ -92,7 +92,7 @@
         app:layout_constraintStart_toStartOf="@id/tv_name"
         app:layout_constraintEnd_toStartOf="@id/count_container"
         app:layout_constraintTop_toBottomOf="@id/tv_name"
-        app:layout_constraintBottom_toTopOf="tv_price_with_discount" />
+        app:layout_constraintBottom_toTopOf="@id/tv_price_with_discount" />
 
     <TextView
         android:id="@+id/tv_price_with_discount"

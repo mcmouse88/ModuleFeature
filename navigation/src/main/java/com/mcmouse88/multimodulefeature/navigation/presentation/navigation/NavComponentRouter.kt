@@ -195,7 +195,7 @@ class NavComponentRouter @AssistedInject constructor(
     private fun prepareTitle(label: CharSequence?, arguments: Bundle?): String {
         if (label == null) return ""
         val title = StringBuffer()
-        val fillInPattern = Pattern.compile("\\{(.+?)}")
+        val fillInPattern = Pattern.compile("\\{(.+?)\\}")
         val matcher = fillInPattern.matcher(label)
         while (matcher.find()) {
             val argName = matcher.group(1)
