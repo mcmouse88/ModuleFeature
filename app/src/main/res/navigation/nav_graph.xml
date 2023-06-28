@@ -1,6 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_graph">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/signInFragment" >
 
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.mcmouse88.multimodulefeature.sign_in.presentation.signin.SignInFragment"
+        android:label="@string/title_sign_in"
+        tools:layout="@layout/fragment_sign_in" />
+
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.mcmouse88.multimodulefeature.sign_up.presentation.signup.SignUpFragment"
+        android:label="@string/title_sign_up"
+        tools:layout="@layout/fragment_sign_up" />
+
+    <fragment
+        android:id="@+id/tabsFragment"
+        android:name="com.mcmouse88.multimodulefeature.navigation.presentation.TabsFragment"
+        android:label=""
+        tools:layout="@layout/fragment_tabs" />
+
+    <fragment
+        android:id="@+id/cartListFragment"
+        android:name="com.mcmouse88.multimodulefeature.cart.presentation.cartlist.CartListFragment"
+        android:label="@string/title_cart"
+        tools:layout="@layout/fragment_cart_list" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.mcmouse88.multimodulefeature.profile.presentation.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/editUsernameFragment"
+        android:name="com.mcmouse88.multimodulefeature.profile.presentation.edit.EditProfileFragment"
+        android:label="@string/title_edit_profile"
+        tools:layout="@layout/fragment_edit_profile" />
+
+    <dialog
+        android:id="@+id/editQuantityDialogFragment"
+        android:name="com.mcmouse88.multimodulefeature.cart.presentation.quantity.EditQuantityDialogFragment"
+        android:label="@string/title_edit_quantity"
+        tools:layout="@layout/dialog_quantity" />
+
+    <fragment
+        android:id="@+id/catalogFragment"
+        android:name="com.mcmouse88.multimodulefeature.catalog.presentation.catalog.CatalogFragment"
+        android:label="@string/title_catalog"
+        tools:layout="@layout/fragment_catalog" />
+
+    <fragment
+        android:id="@+id/catalogFilterFragment"
+        android:name="com.mcmouse88.multimodulefeature.catalog.presentation.filter.CatalogFilterFragment"
+        android:label="@string/title_filter"
+        tools:layout="@layout/fragment_filter" />
+
+    <fragment
+        android:id="@+id/productDetailsFragment"
+        android:name="com.mcmouse88.multimodulefeature.catalog.presentation.details.ProductDetailFragment"
+        android:label="@string/title_product_details"
+        tools:layout="@layout/fragment_product_detail" />
+
+    <fragment
+        android:id="@+id/createOrderFragment"
+        android:name="com.mcmouse88.multimodulefeature.orders.presentation.create.CreateOrderFragment"
+        android:label="@string/title_create_order"
+        tools:layout="@layout/fragment_create_order" />
+
+    <fragment
+        android:id="@+id/ordersListFragment"
+        android:name="com.mcmouse88.multimodulefeature.orders.presentation.orders.OrderListFragment"
+        android:label="@string/title_orders"
+        tools:layout="@layout/fragment_order_list" />
 </navigation>
